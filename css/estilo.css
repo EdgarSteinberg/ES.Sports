@@ -150,6 +150,17 @@ header nav li a img{
     text-align: center;
     font-size: large;
 }
+
+.registro-flex{
+    width: 100%;
+    padding: 10px;
+    background-color: #CDCBCB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
 .grid-galeria{
     width: 100%;
     margin-top:50px ;
@@ -190,6 +201,13 @@ header nav li a img{
 
 /*-------------FOOTER-------------*/
 
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+}
 .footer-container{
     display: flex;
     justify-content: space-between;
@@ -218,6 +236,7 @@ footer h3{
 .pie h4 {
     padding: 15px;
     font-size: 30px;
+   
 }
 
  /*-------------MEDIA-------------*/
@@ -264,9 +283,17 @@ footer h3{
         margin: 5PX;
         padding: 0;
     }
+    .productos h1{
+        text-align: center;
+        font-size:large;
+    }
 }
 
     @media screen and (max-width:500px){
+        .productos h1{
+            text-align: center;
+            font-size: larger;
+        }
         footer h3{
             font-size:large;
         }
@@ -283,6 +310,10 @@ footer h3{
     }
 
     @media screen and (max-width:450px){
+        .productos h1{
+            text-align: center;
+            font-size: medium;
+        }
         .grid-galeria{
             grid-template-columns:1fr;
         }
@@ -290,4 +321,8 @@ footer h3{
             grid-column: span 1;
             grid-row: span 1;
         }
+
     }
+
+
+   
