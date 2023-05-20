@@ -1,0 +1,126 @@
+@media screen and (max-width:1100px) {
+    header {
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+        }
+
+        nav ul {
+            text-align: center;
+        }
+    }
+
+    main{ 
+        .producto-contenedor {
+            flex-wrap: wrap;
+            
+        }
+        .grid-galeria {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 220px;
+    
+            .grid-items {
+                grid-column: span 1;
+                grid-row: span 1;
+    
+            }
+    
+            .img-9 {
+                grid-column: span 2;
+            }
+        }
+    
+    } 
+}
+
+
+@media screen and (max-width:700px) {
+    header {
+        flex-direction: column;
+        position: static;
+
+        h1 {
+            text-align: center;
+            font-size: nth($font-size, 3);
+        }
+
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        nav li {
+            margin: 5PX;
+            padding: 0;
+        }
+    }
+    main{
+        .productos h1 {
+            text-align: center;
+            font-size: large;
+        }
+        .formulario-contenedor {
+            .fomulario-envios {
+                .form-envio div img {
+                    height: 150px;
+    
+                }
+            }
+    
+        }
+    }
+  
+  
+}
+
+
+@media screen and (max-width:500px) {
+    main{
+        .productos{
+            h1 {
+                text-align: center;
+                font-size: larger;
+            }
+        } 
+    }
+ 
+    footer{
+         h3 {
+            font-size: large;
+        }
+    
+        .registrate {
+            margin-bottom: 10px;
+        }
+    
+        .pie-container {
+            flex-direction: column;
+            align-items: center;
+    
+            .pie h4 {
+                text-align: center;
+            }
+        }
+    }
+   
+}
+
+@media screen and (max-width:450px) {
+   
+   
+    main{
+        .productos h1 {
+            text-align: center;
+            font-size: medium;
+        }
+        .grid-galeria {
+            grid-template-columns: 1fr;
+    
+            .grid-items {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    } 
+}

@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:wght@100&display=swap');
 
+/*--------------RESET--------------*/
 *{
     padding: 0;
     margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
 }
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
@@ -54,15 +61,15 @@ header nav li a img{
     color: #ffffff;
     border-color: #ffffff
 }
+
+
+/*-------------------MAIN---------------------*/
 .prueba{
     background: red;
     text-align: center;
     padding: 15px;
     color: #ffffff;
 }
-
-/*-------------------MAIN---------------------*/
-
 .hero {
     background-image: url(../img/local2.jpg);
     width: 100%;
@@ -201,20 +208,8 @@ header nav li a img{
 
 /*-------------FOOTER-------------*/
 
-footer ul li{
-    list-style: none;
-}
 
-footer ul li a{
-    text-decoration: none;
-}
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 250px;
-    height: 400px;
-}
+
 footer h3{
     background: yellow;
     font-size: 30px;

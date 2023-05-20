@@ -1,0 +1,50 @@
+//*PALETA DE COLORES
+$color-principal: rgb(0, 0, 0);
+$color-secundario: rgba(255, 0, 0, 0.849);
+
+
+//* Listas
+$colores:
+    rgb(255, 0, 119),
+    green,
+    blue,
+    tomato,
+    yellow,
+    #ffffff;
+
+
+$font-size: 
+    12px,
+    16px,
+    20px,
+    30px,
+    50px,
+    65px;
+
+
+//* Mapas
+
+$boton: (
+    bg-boton:rgba(43, 93, 231, 0.87),
+    color-tex:#fff,
+    relleno:10px,
+    radios:10px,
+    
+);
+
+//* Extends
+//% = placeholder
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//* Mixins
+@mixin flex($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

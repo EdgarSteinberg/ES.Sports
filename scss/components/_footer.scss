@@ -1,0 +1,62 @@
+footer {
+    background-color: rgba(221, 221, 221, 0.726);
+    h3 {
+        background: nth($colores , 5);
+        font-size: nth($font-size, 4);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        padding: 45px;
+
+
+        .registrate {
+            background: $color-principal;
+            color: nth($colores , 6);
+            margin: 15px;
+            padding: 5px;
+          
+        }
+
+
+    }
+    
+    .pie-container {
+        @include flex (flex, space-around, center);
+
+        .pie {
+            h4 {
+                padding: 15px;
+                font-size: nth($font-size, 4);
+                transition: 1s;
+
+                &:hover {
+                    transform: scale(1.1);
+
+                }
+
+            }
+
+            img {
+                transition: 1s;
+
+                &:hover {
+                    transform: scale(1.2);
+
+                }
+            }
+
+            ul {
+                li {
+                    transform: 1s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+}

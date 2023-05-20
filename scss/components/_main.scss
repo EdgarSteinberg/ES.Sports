@@ -1,0 +1,261 @@
+main {
+    background-color: rgba(221, 221, 221, 0.726);
+
+    .prueba {
+        background: rgb(254, 0, 0);
+        background: radial-gradient(circle, rgba(254, 0, 0, 0.9108018207282913) 41%, rgba(247, 2, 2, 0.5438550420168067) 100%);
+        text-align: center;
+        padding: 5px;
+        color: nth($colores , 6);
+    }
+
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.123)), url(../img/local2.jpg);
+        width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: nth($colores , 6);
+        background-attachment: fixed;
+        flex-direction: column;
+        @include flex (flex, center, center);
+
+        h2 {
+            font-size: nth($font-size, 6);
+        }
+
+        p {
+            font-size: nth($font-size, 5);
+            margin-bottom: 20px;
+        }
+
+        .boton {
+            color: map-get($boton, color-tex);
+            background-color: map-get($boton, bg-boton);
+            padding: map-get($boton, relleno);
+            border-radius: map-get($boton, radios);
+            transition: 1s;
+
+            &:hover {
+                transform: scaleX(1.1);
+                background-color: rgb(8, 0, 122);
+
+
+            }
+        }
+
+    }
+
+    .bienvenidos {
+        h2 {
+            text-align: center;
+
+        }
+
+        p {
+
+            text-align: center;
+
+        }
+
+    }
+
+    .productos {
+        h2 {
+            text-align: center;
+            background: $color-principal;
+            font-size: nth($font-size, 4);
+            color: nth($colores , 6);
+            padding: 20px;
+        }
+
+        .producto-contenedor {
+            @include flex (flex, center, center);
+
+
+            .producto-card {
+                width: 500%;
+                height: 420px;
+                border: 1px black solid;
+                border-radius: 5%;
+                background-color: nth($colores , 6);
+                text-align: center;
+                margin: 20px;
+                box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.75);
+                transition: 1s;
+
+                img {
+                    width: 200px;
+                    height: 270px;
+                    padding: 10px 0;
+
+                }
+
+                h3 {
+                    margin: 10px;
+                    text-align: center;
+                    font-size: small;
+
+                }
+
+                h4 {
+                    margin: 10px;
+                    text-align: center;
+                    font-size: nth($font-size, 2);
+                    color: nth($colores, 2);
+
+                }
+
+                h5 {
+                    text-align: center;
+                    font-size: nth($font-size, 1);
+                    color: nth($colores, 2);
+                }
+
+                .boton {
+                    color: map-get($boton, color-tex);
+                    background-color: map-get($boton, bg-boton);
+                    padding: map-get($boton, relleno);
+                    border-radius: map-get($boton, radios);
+                    transition: 1s;
+
+
+                    &:hover {
+                        background-color: rgb(8, 0, 122);
+                        transform: scaleX(1.1);
+
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.75);
+                    -webkit-box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.75);
+                }
+            }
+        }
+
+    }
+
+    .fixed {
+        position: fixed;
+        right: 50px;
+        bottom: 20px;
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+    }
+
+    .nosotros {
+        text-align: center;
+        margin: 15px;
+
+
+    }
+
+    .video {
+        @include flex (flex, center, center);
+
+    }
+
+    .localizacion {
+        text-align: center;
+
+        h3 {
+            margin: 15px;
+        }
+
+    }
+
+    .grid-galeria {
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 250px;
+        gap: 15px;
+        object-fit: cover;
+
+        .grid-items {
+            position: relative;
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.1);
+
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 10px 10px 22px -1px rgba(0, 0, 0, 0.75);
+            }
+
+            h3 {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.507);
+                font-size: nth($font-size , 4);
+                text-align: center;
+
+                a {
+                    color: rgba(255, 255, 255, 0.377);
+                    transition: 1s;
+
+                    &:hover {
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+
+        .img-4 {
+            grid-column: span 2;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .img-6 {
+            grid-row: span 2;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .img-8 {
+            grid-row: span 2;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+
+    .formulario-contenedor {
+        @include flex (flex, center, center);
+
+        .form-envio div img {
+            height: 250px;
+            margin: 10px;
+
+
+        }
+    }
+
+}
