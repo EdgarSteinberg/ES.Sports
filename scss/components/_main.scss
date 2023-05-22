@@ -63,6 +63,11 @@ main {
     }
 
     .productos {
+        h1{
+            font-size: nth($font-size , 3);
+            text-align: center;
+            margin: 10px;
+        }
         h2 {
             text-align: center;
             background: $color-principal;
@@ -248,12 +253,18 @@ main {
 
 
     .formulario-contenedor {
-        @include flex (flex, center, center);
-
+        @include flex (flex, space-around, center);
+        .formu{
+                font-size: nth($font-size , 1);
+                margin: 10px;
+                h1{
+                    text-align: center;
+                }
+        }
         .form-envio div img {
             height: 250px;
             margin: 10px;
-
+            
 
         }
     }

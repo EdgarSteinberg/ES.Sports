@@ -102,6 +102,10 @@ main {
     text-align: center; }
   main .bienvenidos p {
     text-align: center; }
+  main .productos h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px; }
   main .productos h2 {
     text-align: center;
     background: black;
@@ -218,8 +222,13 @@ main {
         transform: scale(1.1); }
   main .formulario-contenedor {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; }
+    main .formulario-contenedor .formu {
+      font-size: 12px;
+      margin: 10px; }
+      main .formulario-contenedor .formu h1 {
+        text-align: center; }
     main .formulario-contenedor .form-envio div img {
       height: 250px;
       margin: 10px; }
@@ -235,7 +244,7 @@ footer {
     footer h3 .registrate {
       background: black;
       color: #ffffff;
-      margin: 15px;
+      margin: 20px;
       padding: 5px; }
   footer .pie-container {
     display: flex;
