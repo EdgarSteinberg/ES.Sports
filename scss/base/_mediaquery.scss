@@ -11,27 +11,28 @@
         }
     }
 
-    main{ 
+    main {
         .producto-contenedor {
             flex-wrap: wrap;
-            
+
         }
+
         .grid-galeria {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 220px;
-    
+
             .grid-items {
                 grid-column: span 1;
                 grid-row: span 1;
-    
+
             }
-    
+
             .img-9 {
                 grid-column: span 2;
             }
         }
-    
-    } 
+
+    }
 }
 
 
@@ -55,72 +56,126 @@
             padding: 0;
         }
     }
-    main{
+
+    main {
         .productos h1 {
             text-align: center;
             font-size: large;
         }
+
         .formulario-contenedor {
             .fomulario-envios {
                 .form-envio div img {
                     height: 150px;
-    
+
                 }
             }
-    
+
+        }
+        .localizacion{
+            h3{
+                font-size:nth($font-size, 3);
+                text-align: center; 
+            }
+            .localizacion iframe{
+                width:500px ;
+                height: auto;
+              
+            }
+        }
+      
+        .nosotros{
+            h1{
+                font-size:nth($font-size, 3);
+                text-align: center;
+            }
+            p{
+                font-size:nth($font-size,1);
+            }
+        }
+        .hero{
+            p{
+                font-size:nth($font-size, 4);
+            }
         }
     }
-  
-  
+
+
 }
 
 
 @media screen and (max-width:500px) {
-    main{
-        .productos{
+    main {
+        .productos {
             h1 {
                 text-align: center;
                 font-size: larger;
             }
-        } 
+        }
+        .localizacion iframe{
+            width:400px ;
+            height: auto;
+        }
+   
     }
- 
-    footer{
-         h3 {
+
+    footer {
+        h3 {
             font-size: large;
         }
-    
+
         .registrate {
             margin-bottom: 10px;
         }
-    
+
         .pie-container {
             flex-direction: column;
             align-items: center;
-    
+
             .pie h4 {
                 text-align: center;
             }
         }
+     
     }
-   
+    
+
 }
 
 @media screen and (max-width:450px) {
-   
-   
-    main{
+
+
+    main {
         .productos h1 {
             text-align: center;
             font-size: medium;
         }
+
         .grid-galeria {
             grid-template-columns: 1fr;
-    
+
             .grid-items {
                 grid-column: span 1;
                 grid-row: span 1;
             }
         }
-    } 
+
+
+        .formu {
+
+            h1 {
+                font-size:large;
+
+            }
+        }
+        .localizacion iframe{
+            width:300px ;
+            height: auto;
+        }
+
+
+    }
+
+
+
 }

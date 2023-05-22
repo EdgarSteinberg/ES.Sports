@@ -127,7 +127,7 @@ main {
                     padding: map-get($boton, relleno);
                     border-radius: map-get($boton, radios);
                     transition: 1s;
-
+                
 
                     &:hover {
                         background-color: rgb(8, 0, 122);
@@ -253,7 +253,7 @@ main {
 
 
     .formulario-contenedor {
-        @include flex (flex, space-around, center);
+        @include flex (flex, center, center);
         .formu{
                 font-size: nth($font-size , 1);
                 margin: 10px;

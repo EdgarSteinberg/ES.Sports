@@ -222,7 +222,7 @@ main {
         transform: scale(1.1); }
   main .formulario-contenedor {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center; }
     main .formulario-contenedor .formu {
       font-size: 12px;
@@ -300,12 +300,28 @@ footer {
     text-align: center;
     font-size: large; }
   main .formulario-contenedor .fomulario-envios .form-envio div img {
-    height: 150px; } }
+    height: 150px; }
+  main .localizacion h3 {
+    font-size: 20px;
+    text-align: center; }
+  main .localizacion .localizacion iframe {
+    width: 500px;
+    height: auto; }
+  main .nosotros h1 {
+    font-size: 20px;
+    text-align: center; }
+  main .nosotros p {
+    font-size: 12px; }
+  main .hero p {
+    font-size: 30px; } }
 
 @media screen and (max-width: 500px) {
   main .productos h1 {
     text-align: center;
     font-size: larger; }
+  main .localizacion iframe {
+    width: 400px;
+    height: auto; }
   footer h3 {
     font-size: large; }
   footer .registrate {
@@ -324,4 +340,9 @@ footer {
     grid-template-columns: 1fr; }
     main .grid-galeria .grid-items {
       grid-column: span 1;
-      grid-row: span 1; } }
+      grid-row: span 1; }
+  main .formu h1 {
+    font-size: large; }
+  main .localizacion iframe {
+    width: 300px;
+    height: auto; } }
