@@ -24,31 +24,34 @@ footer {
         @include flex (flex, space-around, center);
 
         .pie {
+           
+           
             h4 {
                 padding: 15px;
                 font-size: nth($font-size, 4);
                 transition: 1s;
-
+                text-align: center;
                 &:hover {
                     transform: scale(1.1);
 
                 }
-
+                
             }
-
+           
             img {
                 transition: 1s;
-
+             
                 &:hover {
-                    transform: scale(1.2);
+                    transform: scale(1.1);
 
                 }
             }
-
+            
             ul {
+            
                 li {
                     transform: 1s;
-
+                    
                     &:hover {
                         transform: scale(1.1);
                     }

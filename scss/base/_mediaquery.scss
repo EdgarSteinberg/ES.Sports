@@ -99,7 +99,12 @@
             }
         }
     }
+    footer{
+        .pie-container {
+            flex-direction: column;
+            align-items: center;
 
+    }
 
 }
 
@@ -134,7 +139,9 @@
 
             .pie h4 {
                 text-align: center;
+                
             }
+
         }
      
     }
@@ -159,7 +166,12 @@
                 grid-row: span 1;
             }
         }
+        .formulario-contenedor {
+                    display: flex;
+                    flex-direction: column;
 
+                }
+    
 
         .formu {
 
@@ -175,7 +187,18 @@
 
 
     }
-
-
-
+    footer {
+      h3{
+        
+        a.registrate{
+           margin-bottom:  15px;
+        }
+      }
+      .pie-container{
+        div.pie{
+            padding: 15px;
+        }
+      }
+    } 
+}
 }

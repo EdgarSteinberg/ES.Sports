@@ -64,6 +64,9 @@ header {
 
 main {
   background-color: rgba(221, 221, 221, 0.726); }
+  main h1 {
+    text-align: center;
+    padding: 10px; }
   main .prueba {
     background: #fe0000;
     background: radial-gradient(circle, rgba(254, 0, 0, 0.910802) 41%, rgba(247, 2, 2, 0.543855) 100%);
@@ -229,6 +232,8 @@ main {
       margin: 10px; }
       main .formulario-contenedor .formu h1 {
         text-align: center; }
+      main .formulario-contenedor .formu button.btn.btn-primary {
+        margin: 5px; }
     main .formulario-contenedor .form-envio div img {
       height: 250px;
       margin: 10px; }
@@ -253,13 +258,14 @@ footer {
     footer .pie-container .pie h4 {
       padding: 15px;
       font-size: 30px;
-      transition: 1s; }
+      transition: 1s;
+      text-align: center; }
       footer .pie-container .pie h4:hover {
         transform: scale(1.1); }
     footer .pie-container .pie img {
       transition: 1s; }
       footer .pie-container .pie img:hover {
-        transform: scale(1.2); }
+        transform: scale(1.1); }
     footer .pie-container .pie ul li {
       transform: 1s; }
       footer .pie-container .pie ul li:hover {
@@ -313,9 +319,12 @@ footer {
   main .nosotros p {
     font-size: 12px; }
   main .hero p {
-    font-size: 30px; } }
+    font-size: 30px; }
+  footer .pie-container {
+    flex-direction: column;
+    align-items: center; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) and (max-width: 500px) {
   main .productos h1 {
     text-align: center;
     font-size: larger; }
@@ -332,7 +341,7 @@ footer {
     footer .pie-container .pie h4 {
       text-align: center; } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) and (max-width: 450px) {
   main .productos h1 {
     text-align: center;
     font-size: medium; }
@@ -341,8 +350,15 @@ footer {
     main .grid-galeria .grid-items {
       grid-column: span 1;
       grid-row: span 1; }
+  main .formulario-contenedor {
+    display: flex;
+    flex-direction: column; }
   main .formu h1 {
     font-size: large; }
   main .localizacion iframe {
     width: 300px;
-    height: auto; } }
+    height: auto; }
+  footer h3 a.registrate {
+    margin-bottom: 15px; }
+  footer .pie-container div.pie {
+    padding: 15px; } }

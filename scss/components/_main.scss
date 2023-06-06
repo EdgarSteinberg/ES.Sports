@@ -1,6 +1,9 @@
 main {
     background-color: rgba(221, 221, 221, 0.726);
-
+    h1{
+        text-align: center;
+        padding: 10px;
+    }
     .prueba {
         background: rgb(254, 0, 0);
         background: radial-gradient(circle, rgba(254, 0, 0, 0.9108018207282913) 41%, rgba(247, 2, 2, 0.5438550420168067) 100%);
@@ -259,6 +262,9 @@ main {
                 margin: 10px;
                 h1{
                     text-align: center;
+                }
+                button.btn.btn-primary{
+                    margin: 5px;
                 }
         }
         .form-envio div img {
