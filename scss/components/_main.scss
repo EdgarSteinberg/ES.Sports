@@ -42,7 +42,7 @@ main {
             transition: 1s;
 
             &:hover {
-                transform: scaleX(1.1);
+                transform: scale(1.1);
                 background-color: rgb(8, 0, 122);
 
 
@@ -134,7 +134,7 @@ main {
 
                     &:hover {
                         background-color: rgb(8, 0, 122);
-                        transform: scaleX(1.1);
+                        transform: scale(1.1);
 
                     }
                 }
