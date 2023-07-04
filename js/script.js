@@ -1,52 +1,50 @@
 
+//Pre Entrega Edgar Steinberg 
+
 
 let carrito = "";
 let nuevaOperacion = false;
-let producto = prompt("Agregar al carrito:\nSeleccione su camiseta:\n  Argentina\n  Independiente\n  River\n  Boca\n");
-let cantidad = parseInt(prompt(`Ingrese la cantidad de ${producto} que desea comprar:`));
 let totalCompra = 0;
 
-function hacerCarrito(producto, cantidad) {
+function hacerCarrito() {
   do {
-    seleccionarProducto(producto, cantidad);
-    nuevaOperacion = confirm("¿Desea agregar otro producto al carrito?");
-     if (nuevaOperacion) {
-      producto = prompt("Comprar ahora, seleccione su camiseta (Argentina, Independiente, River, Boca):");
-      cantidad = parseInt(prompt(`Ingrese la cantidad de camisetas de ${producto} que desea comprar:`));
-    }   
+      producto = prompt("Agregar al carrito, seleccione su camiseta\n(Argentina, Independiente, River, Boca):");
+      cantidad = Number(prompt(`Ingrese la cantidad de camisetas de ${producto} que desea comprar:`));
+      seleccionarCamiseta();
+      nuevaOperacion = confirm("¿Desea agregar otro producto al carrito?");
   } while (nuevaOperacion);
-
   alert("Productos en el carrito:\n" + carrito + "Precio total de la compra:\n" + totalCompra + " Pesos\n" + "Gracias por su compra" );
-
 }
 
-function seleccionarProducto(producto, cantidad) {
+function seleccionarCamiseta() {
   switch (producto.toLowerCase()) {
     case "argentina":
-      let precioArgentina = 33000 * cantidad;
-      carrito += `Camiseta de Argentina - Cantidad: ${cantidad} - Total: ${precioArgentina} pesos\n`;
-      totalCompra += precioArgentina;
+      precio = 33000 * cantidad;
+      carrito += `Camiseta de Argentina - Cantidad: ${cantidad} - Total: ${precio} pesos\n`;
+      totalCompra += precio
       break;
     case "independiente":
-      let precioIndependiente = 27000 * cantidad;
-      carrito += `Camiseta de Independiente - Cantidad: ${cantidad} - Total: ${precioIndependiente} pesos\n`;
-      totalCompra += precioIndependiente;
+      precio = 27000 * cantidad;
+      carrito += `Camiseta de Independiente - Cantidad: ${cantidad} - Total: ${precio} pesos\n`;
+      totalCompra += precio
       break;
     case "river":
-      let precioRiver = 25000 * cantidad;
-      carrito += `Camiseta de River - Cantidad: ${cantidad} - Total: ${precioRiver} pesos\n`;
-      totalCompra += precioRiver
+      precio = 25000 * cantidad;
+      carrito += `Camiseta de River - Cantidad: ${cantidad} - Total: ${precio} pesos\n`;
+      totalCompra += precio
       break;
     case "boca":
-      let precioBoca = 24000 * cantidad
-      carrito += `Camiseta de Boca - Cantidad: ${cantidad} - Total: ${precioBoca} pesos\n`;
-      totalCompra += precioBoca 
+      precio = 24000 * cantidad
+      carrito += `Camiseta de Boca - Cantidad: ${cantidad} - Total: ${precio} pesos\n`;
+      totalCompra += precio
       break;
     default:
       alert("El producto ingresado no está disponible.");
       break;
   }
 
-}
+} 
 
-hacerCarrito(producto, cantidad);  
+hacerCarrito();  
+
+ 
