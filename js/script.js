@@ -3,7 +3,7 @@
 
 
 // Mi array de objetos con id nombre producto y precio
-let productos = [
+/* let productos = [
   {
     id: 1,
     nombreProducto: "camiseta argentina negra",
@@ -108,3 +108,44 @@ if (carrito.length > 0) {
 calcularTotal();
 
 
+ */
+
+/* // Obtener el elemento del DOM con el ID "miProducto"
+const productoCard = document.getElementById("miProducto");
+
+// Acceder a los elementos internos del div con clase "producto-card"
+const imagen = productoCard.querySelector("img");
+const titulo = productoCard.querySelector("h3");
+const precio = productoCard.querySelector("h4");
+const envio = productoCard.querySelector("h5");
+const boton = productoCard.querySelector("a");
+
+// Realizar acciones con los elementos obtenidos
+console.log(imagen.src);
+console.log(titulo.textContent);
+console.log(precio.textContent);
+console.log(envio.textContent);
+
+// Ejemplo de cómo agregar un evento al botón
+boton.addEventListener("click", () => {
+  alert("¡Has hecho clic en el botón Comprar!");
+}); */
+
+
+
+  // Accediendo a todos los elementos con la clase "producto-card"
+ // const productos = document.getElementsByClassName('producto-card');
+
+  // O puedes usar document.querySelectorAll() para seleccionar por clase
+  // const productos = document.querySelectorAll('.producto-card');
+
+  // Iterando sobre los elementos con la clase "producto-card"
+  //for (let i = 0; i < productos.length; i++) {
+   // const producto = productos[i];
+
+    // Realizando alguna acción con cada producto
+   // producto.addEventListener('click', () => {
+     // alert(`Haz clic en el producto número ${i + 1}.`);
+      // Puedes realizar cualquier otra acción que desees aquí
+   // });
+//  }
